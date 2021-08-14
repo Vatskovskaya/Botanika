@@ -5,36 +5,155 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Botanika</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<nav>
-				<ul>
-					<li>Каталог</li>
-					<li>Доставка и оплата</li>
-					<li>Отзывы</li>
-					<li>Спецпредложения</li>
-					<li>Контакты</li>
-					<li>Корзина</li>
+			<a href="#"><img src="img/svg/Logo.svg" alt="Логотип цветочного магазина «<Ботаника»"></a>
+			<nav class="header__navigation">
+				<ul class="header__navigation-list">
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Корзина</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
-		<div class="container">
-			
-		</div>
+		<section class="main-section">
+			<div class="container">
+				<div class="main-section__column">
+					<h1>Авторские букеты <i>в Петербурге</i></h1>
+					<p>Оригинальные свежие букеты с доставкой по всему городу</p>
+					<a href="#">Смотреть каталог</a>
+					<img src="img/flowers1.jpg" alt="букет розовых тюльпанов" width="386" height="404">
+					<img src="img/flowers-2.jpg" alt="букет с розами в нежных цветах" width="387" height="420">
+				</div>
+			</div>
+		</section>
+		<section class="advanteges-section">
+			<div class="container">
+				<h2 class="visualy-hidden">Преимущества</h2>
+				<div class="advanteges__row">
+					<img src="img/svg/van.svg" alt="грузовик с доставкой">
+					<h3>Быстрая доставка</h3>
+					<p>Можем собрать букет и передать его в доставку всего за час.</p>
+				</div>
+				<div class="advanteges__row">
+					<img src="img/svg/bouquet.svg" alt="букет цветов">
+					<h3>Всегда свежие цветы</h3>
+					<p>Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.</p>
+				</div>
+				<div class="advanteges__row">
+					<img src="img/svg/camera.svg" alt="фотоапарат с фотографией">
+					<h3>Отправляем фото цветов</h3>
+					<p>Перед доставкой сделаем фотографию букета и отправим вам.</p>
+				</div>
+			</div>
+		</section>
+		<section class="popular-section">
+			<div class="container">
+				<h2><strong>Популярные букеты</strong></h2>
+				<div class="popular-section__slider">
+					<div class="popular-section__row">
+						<div class="popular-section__column">
+							<h3>Букет «Нежность»</h3>
+							<p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+							<p>30 × 40 см</p>
+							<p>3600 руб.</p>
+							<a href="#">Заказать</a>
+						</div>
+						<img src="img/imgbin_flower.png" alt="букет белых цветов" width="387" height="438">
+					</div>
+					<a href=""><img src="img/svg/Arrow 2.svg" alt="Стрелочка назад"></a>
+					<a href=""><img src="img/svg/Arrow 1.svg" alt="Стрелочка вперед"></a>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-section">
+			<div class="container">
+				<h2 class="visualy-hidden">Каталог</h2>
+				<div class="catalog__row">
+					<a href="#"><img src="img/wedding.jpg" alt="Свадебный букет" width="387" height="442"></a>
+					<a href="#"><img src="img/peony.jpg" alt="Букет с пионами" width="387" height="442"></a>
+					<a href="#"><img src="img/choose-bouquet.jpg" alt="букет из разных цветов" width="387" height="442"></a>
+				</div>
+			</div>
+		</section>
+		<section class="sale-section">
+			<div class="container">
+				<div class="sale__row">
+					<h2>Скидка 10% на первый заказ</h2>
+					<p>Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите скидку 10%.</p>
+					<img src="img/sale-section.jpg" alt="большой букет в крафтовой бумаге" width="590" height="391"> 
+				</div>
+			</div>
+		</section>
+		<section class="order-step">
+			<div class="container">
+				<h2>4 шага к идеальному букету</h2>
+				<div class="order-step__row">
+					<div class="order-step__column">
+						<img src="img/svg/order.svg" alt="страница с корзиной">
+						<h3>Заказ</h3>
+						<p>Выбирите понравившейся букет из каталога и оформите заказ</p>
+					</div>
+					<div class="order-step__column">
+						<img src="img/svg/girl.svg" alt="девушка">
+						<h3>Уточнение деталей</h3>
+						<p>Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+					</div>
+					<div class="order-step__column"> 
+						<img src="img/svg/chek.svg." alt="банковская карта">
+						<h3>Оплата</h3>
+						<p>Оплатить заказ можно онлайн на сайте или при получении</p>
+					</div>
+					<div class="order-step__column">
+						<img src="img/svg/van.svg" alt="грузовик с доставкой">
+						<h3>Доставка</h3>
+						<p>Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="news-section">
+			<div class="container">
+				<div class="news-section__row">
+					<h2>Следите за нашими новостями</h2>
+					<p>Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+					<a href="#"><img src="img/svg/instagram_icon.svg" alt="Инстаграм"></a>
+					<a href="#"><img src="img/svg/facebook_icon.svg" alt="Фейсбук"></a>
+					<a href="#"><img src="img/svg/twitter_icon.svg" alt="Твиттер"></a>
+					<div class="news-section__img-block">
+						<img src="img/samantha-gades-nysCDwot01c-unsplash 1.jpg" alt="букет цветов" width="285" height="220">
+						<img src="img/insung-yoon-jRofmV5rPl0-unsplash 1.jpg" alt="букет цветов" width="285" height="220">
+						<img src="img/demi-he-hPcxvCecdPI-unsplash 1.jpg" alt="букет цветов" width="387" height="460">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<div class="container">
+				
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="container">
 			<nav>
 				<ul>
-					<li>Каталог</li>
-					<li>Доставка и оплата</li>
-					<li>Отзывы</li>
-					<li>Спецпредложения</li>
-					<li>Контакты</li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
