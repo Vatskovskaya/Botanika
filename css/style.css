@@ -120,24 +120,36 @@ body{
 
 .advanteges__row{
 	display: flex;
-	flex-direction: column;
-	align-items: baseline;
+	align-items: flex-start;
 	flex-basis: 33.33%;
 	flex-grow: 0;
 }
+.advanteges__img{
+	display: flex;
+}
+.advanteges__row-info{
+	display: flex;
+	flex-direction: column;
 
-.advanteges__row h3{
+}
+
+.advanteges__row-info h3{
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;
 
+	margin-top: 0;
+    margin-bottom: 8px;
+
 	color: #AE7C78;
 }
 
-.advanteges__row p{
+.advanteges__row-info p{
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 20px;
+
+	margin: 0;
 
 	color: #AE7C78;
 }
@@ -404,9 +416,6 @@ body{
 	padding-bottom: 20px;
 	background-color: #AE7C78;
 }
-.footer img{
-	background-color: #fff;
-}
 
 .footer__navigation{
 	display: flex;
@@ -421,7 +430,6 @@ body{
 	justify-content: space-between;
 	justify-content: space-between;
     flex-basis: 660px;
-
 }
 
 .footer__navigation-list a{
