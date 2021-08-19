@@ -88,19 +88,24 @@ body{
 }
 
 .main-section__column{
-	/*display: flex;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    height: 470px;
+    column-gap: 20px;
 }
 
 .main-section__column-text{
-	/*display: flex;
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	flex-basis: 384px;*/
 }
 
-.main-section__column-img{
-	/*display: flex;
-	flex-direction: row;*/
+.main-section__column-text h1{
+	margin: 0;
+}
+
+.main-section__column-img1{
+	align-self: flex-end;
 }
 
 /*Advanteges Section*/
