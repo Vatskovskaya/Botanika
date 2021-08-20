@@ -291,21 +291,24 @@ body{
 
 /*Sale Section*/
 .sale-section{
-	background-color: #AE7C78;
-	color: #fff;
-
 	margin-bottom: 80px;
 }
 
 .sale__flex-box{
+	background-color: #AE7C78;
+	color: #fff;
+
 	display: flex;
 }
 
 .sale__flex-box-text{
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center;*/
+	flex-basis: 387px;
+	margin: 0 auto;
 }
+
 .sale__flex-box-text h2{
 	font-family: Playfair Display;
 	font-weight: normal;
@@ -334,17 +337,18 @@ body{
 	letter-spacing: 0.02em;
 
 	color: #AE7C78;
+
+	margin-bottom: 36px;
 }
 
 .order-step__flex-box{
 	display: flex;
-
 }
 
 .order-step__column{
 	display: flex;
 	flex-direction: column;
-	align-items: baseline;
+	align-items: center;
 }
 
 .order-step__column h3{
@@ -358,7 +362,7 @@ body{
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 20px;
-
+	text-align: center;
 
 	color: #AE7C78;
 }
@@ -368,8 +372,16 @@ body{
 
 }
 
-.news-section__flex-box{}
-.news-section__flex-box h2{
+.news-section__flex-box{
+	display: grid;
+}
+
+.news-section__info-block{
+	display: flex;
+	flex-direction: column;
+}
+
+.news-section__info-block h2{
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 48px;
@@ -378,12 +390,16 @@ body{
 	color: #AE7C78;
 }
 
-.news-section__flex-box p{
+.news-section__info-block p{
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 29px;
 
 	color: #AE7C78;
+}
+
+.news-section__img-block{
+	display: grid;
 }
 
 /*Feedback Section*/
