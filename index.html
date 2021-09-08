@@ -4,21 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Botanika</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<nav class="header__navigation">
-				<ul class="header__navigation-list">
+				<ul class="header__navigation-list list1">
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Доставка и оплата</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#"><img src="img/svg/Logo.svg" alt="Логотип цветочного магазина «<Ботаника»"></a></li>
+					<li><a href="index.html">Отзывы</a></li>
+				</ul>
+				<a href="#" class="desktop-logo"><img src="img/svg/Logo.svg" alt="Логотип цветочного магазина «<Ботаника»"></a>	
+				<ul class="header__navigation-list list2">
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Контакты</a></li>
 					<li><a href="#">Корзина</a></li>
@@ -38,13 +43,14 @@
 					<div class="main-section__column-img1">
 						<img src="img/flowers1.jpg" alt="букет розовых тюльпанов" width="386" height="404">
 					</div>
-					<img src="img/flowers-2.jpg" alt="букет с розами в нежных цветах" width="387" height="420">
+					<div class="main-section__column-img2">
+						<img src="img/flowers-2.jpg" alt="букет с розами в нежных цветах" width="387" height="420">
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="advanteges-section">
 			<div class="container">
-				<!-- <h2 class="visualy-hidden">Преимущества</h2> -->
 				<div class="advanteges__flex-box">
 					<div class="advanteges__row">
 						<div class="advanteges__img">
@@ -80,7 +86,7 @@
 			<div class="container">
 				<h2><strong>Популярные букеты</strong></h2>
 				<div class="popular-section__slider">
-					<div class="popular-section__row">
+					<div class="popular-section__row slide__item">
 						<div class="popular-section__column">
 							<h3>Букет «Нежность»</h3>
 							<p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
@@ -90,16 +96,31 @@
 						</div>
 						<img src="img/imgbin_flower.png" alt="букет белых цветов" width="387" height="438">
 					</div>
-					<div class="popular-section__slider-arrows">
-						<a href=""><img src="img/svg/Arrow2.svg" alt="Стрелочка назад"></a>
-						<a href=""><img src="img/svg/Arrow1.svg" alt="Стрелочка вперед"></a>
-					</div>	
+						<div class="popular-section__row slide__item">
+						<div class="popular-section__column">
+							<h3>Букет «Радость»</h3>
+							<p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+							<p>30 × 50 см</p>
+							<p><span> 2500 руб.</span></p>
+							<a class="button" href="#">Заказать</a>
+						</div>
+						<img src="img/peonia.png" alt="букет белых цветов" width="387" height="400">
+					</div>
+						<div class="popular-section__row slide__item">
+						<div class="popular-section__column">
+							<h3>Букет «Весна»</h3>
+							<p>Элегантный букет, который станет отличным подарком на день рождения или юбилей.</p>
+							<p>50 × 60 см</p>
+							<p><span> 2200 руб.</span></p>
+							<a class="button" href="#">Заказать</a>
+						</div>
+						<img src="img/chamomile.png" alt="букет белых цветов" width="387" height="438">
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="catalog-section">
 			<div class="container">
-			<!-- 	<h2 class="visualy-hidden">Каталог</h2> -->
 				<div class="catalog__row">
 					<div class="catalog__column">
 						<a href="#">
@@ -113,15 +134,15 @@
 					<div class="catalog__column">
 						<a href="#"><img src="img/peony.jpg" alt="Букет с пионами" width="387" height="442">
 						<div class="catalog-info">
-								<h3>Свадебные букеты</h3>
-								<p>Букеты для невест</p>
+								<h3>Букеты с пионами</h3>
+								<p>Букеты с сезонными пионами</p>
 							</div></a>
 					</div>
 					<div class="catalog__column">
 						<a href="#"><img src="img/choose-bouquet.jpg" alt="букет из разных цветов" width="387" height="442">
 						<div class="catalog-info">
-								<h3>Свадебные букеты</h3>
-								<p>Букеты для невест</p>
+								<h3>Выбрать букет</h3>
+								<p>Букеты в ассортименте</p>
 							</div></a>
 					</div>
 				</div>
@@ -146,7 +167,7 @@
 					<div class="order-step__column">
 						<img src="img/svg/order.svg" alt="страница с корзиной">
 						<h3>Заказ</h3>
-						<p>Выбирите понравившейся букет из каталога и оформите заказ</p>
+						<p>Выберите понравившийся букет из каталога и оформите заказ</p>
 					</div>
 					<div class="order-step__column">
 						<img src="img/svg/girl.svg" alt="девушка">
@@ -223,7 +244,7 @@
 					<p>Режим работы:</p>
 					<p class="address__info-box__items">Пн-Вск, с 9-00 до 20-00</p>
 					<p>Позвоните нам:</p>
-					<a class="address__info-box__items" href="tel:+78129834719">+ 7 (812) 983-47-19</a>
+					<a class="address__info-box__items phone" href="tel:+78129834719">+ 7 (812) 983-47-19</a>
 					<p>Напишите нам:</p>
 					<a class="address__info-box__items" href="mailto:info@botanika.ru">info@botanika.ru</a>
 				</div>
@@ -233,7 +254,7 @@
 	<footer class="footer">
 		<div class="container">
 			<nav class="footer__navigation">
-				<a href="#"><img width="100" height="33" src="img/Logo.png" alt="Логотип цветочного магазина «Ботаника»"></a>
+				<a href="index.html"><img width="100" height="33" src="img/Logo.png" alt="Логотип цветочного магазина «Ботаника»"></a>
 				<ul class="footer__navigation-list">
 					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Доставка и оплата</a></li>
@@ -255,5 +276,8 @@
 			</nav>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
